@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Simple H5 with a swiper</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="swiper, h5, mobile">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="https://apps.bdimg.com/libs/fontawesome/4.1.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Loading animatated spinner -->
+  <div class="loading-overlay">
+    <img src="images/loading.svg">
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Optional right-side pagination -->
+    <div class="swiper-pagination"></div>
+      <!-- Required additional wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide-1">
+          <img class="animated" src="./images/smiley-bird-ho.svg" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="1s">
+          <h2 class="animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.5s">
+          Hello! my name is Stephane and I'd like to show you how to create a simple H5</h2>
+        </div>
+        <div class="swiper-slide slide-2">
+        <!-- get all animation names from https://daneden.github.io/animate.css/ -->
+          <h2 class="animated" data-ani-name="zoomInDown" data-ani-duration="1s" data-ani-delay="0.5s">
+          We can use a swiper and basic animations that you can share on Wechat…</h2>
+          <img class="animated" src="./images/rocket.svg" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="1s">
+        </div>
+        <div class="swiper-slide slide-3">
+          <h2 class="animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.5s">
+            Join us for a free workshop at Le wagon or leave your number and keep in touch!</h2>
+          <img class="animated" src="./images/rocket.svg" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="1s">
+        </div>
+    </div>
+  </div>
+  <!-- Doen't work -->
+  <button class="btn-music"><i class="fa fa-music"></i></button>
+  <audio loop><source src="./audio/plantation-rock.mp3" type="audio/mpeg"></audio>
+
+  <!-- <button class="up-arrow"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button> -->
+  <img class="up-arrow" src="./images/arrow-up2.svg" alt="">
+
+  <script type="text/javascript" src="https://lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/swiper.jquery.min.js"></script>
+
+</body>
+</html>
