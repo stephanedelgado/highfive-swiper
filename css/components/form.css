@@ -1,0 +1,61 @@
+/*https://codepen.io/cbp/pen/XJGQqZ*/
+/*https://css-tricks.com/form-validation-ux-html-css/*/
+/*https://codepen.io/chriscoyier/pen/JXgKjb*/
+
+/*https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms#Why_is_it_so_hard_to_style_form_widgets_with_CSS*/
+/*https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Advanced_styling_for_HTML_forms*/
+
+/*https://scotch.io/tutorials/google-material-design-input-boxes-in-css3*/
+/*While em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.*/
+
+form {
+  width: 80%;
+  margin-top: 20px;
+}
+
+label {
+  font-size: .8em;
+  margin-bottom: 15px;
+}
+
+label:focus {
+  color: red;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid;
+  margin-bottom: 3px;
+  font-size: 1em;
+  background: none;
+}
+
+input:focus {
+  border-color: #FF8B6E;
+  outline: none;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  height: 2.5em;
+  margin-top: 30px;
+  border: none;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: #FF7B5B;
+  opacity: .8;
+}
+
+form button:hover,
+form button:active,
+form button:focus {
+  opacity: 1;
+  transition: all ease .5s;
+}
+
+

@@ -40,7 +40,14 @@
         <div class="swiper-slide slide-3">
           <h2 class="animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.5s">
             Join us for a free workshop at Le wagon or leave your number and keep in touch!</h2>
-          <img class="animated" src="./images/rocket.svg" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="1s">
+          <form class="animated" data-ani-name="bounceInUp" data-ani-duration="1s" data-ani-delay="1s" action="#" method="post">
+            <input type="text" name="user_name" placeholder="" required onfocus="this.placeholder=''; this.onfocus=null;">
+            <label for="name">name</label>
+            <!-- <input type="tel-area-code" value="+86" readonly> maybe -->
+            <input type="tel" name="user_mobile" pattern="(\+86)\s\d{11}" required onfocus="this.value='+86 '; this.onfocus=null;">
+            <label for="name">mobile</label>
+            <button type="submit">Keep in touch</button>
+          </form>
         </div>
     </div>
   </div>

@@ -1,3 +1,5 @@
+@import url("components/form.css");
+
 * {
   /*box-sizing: border-box;*/
 }
@@ -48,8 +50,8 @@ body {
   height: 4em;
   background-color: transparent;
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   z-index: 999;
   border: 1px solid #fff;
   border-radius: 50%;
@@ -128,7 +130,7 @@ body {
 /*very annoying that i can't set a padding
 on the slide without breaking symetry*/
 .swiper-slide h2 {
-  padding: 0 40px;
+  padding: 0 10%;
   text-align: center;
 }
 
