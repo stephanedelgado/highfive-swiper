@@ -10,10 +10,12 @@
 
 form {
   width: 80%;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin: 0 auto;
 }
 
 label {
+  display: block;
   font-size: .8em;
   margin-bottom: 15px;
 }
@@ -56,6 +58,15 @@ form button:active,
 form button:focus {
   opacity: 1;
   transition: all ease .5s;
+}
+
+input, form button {
+  -webkit-appearance: none; /*Safari/Chrome*/
+  -moz-appearance: none; /*Firefox*/
+  -ms-appearance: none; /*IE*/
+  -o-appearance: none; /*Opera*/
+  appearance: none;
+  -webkit-border-radius: 0;
 }
 
 
