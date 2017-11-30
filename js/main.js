@@ -65,26 +65,29 @@ $(document).ready(function () {
 
   var audio = document.getElementById("audio");
 
-  function playVid() {
+  function playAudio() {
       audio.play();
   }
 
-  function pauseVid() {
+  function pauseAudio() {
       audio.pause();
   }
 
+  // play and pause button functions
   var playSound = document.getElementById("play");
-
   $(playSound).on('click', function(event) {
     event.preventDefault();
     $(this).toggleClass('paused');
-    pauseVid();
+    if (audio.paused) {
+      playAudio();
+      } else {
+        pauseAudio();
+      }
   });
-
 
   $('.loading-overlay').slideUp();
   // everything is ready, the overlay slides up
 
-  playVid();
-  // plays the audio track
+  playAudio();
+  // starts playing the audio track
 });
