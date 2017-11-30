@@ -63,6 +63,28 @@ $(document).ready(function () {
       });
   }
 
+  var audio = document.getElementById("audio");
+
+  function playVid() {
+      audio.play();
+  }
+
+  function pauseVid() {
+      audio.pause();
+  }
+
+  var playSound = document.getElementById("play");
+
+  $(playSound).on('click', function(event) {
+    event.preventDefault();
+    $(this).toggleClass('paused');
+    pauseVid();
+  });
+
+
   $('.loading-overlay').slideUp();
   // everything is ready, the overlay slides up
+
+  playVid();
+  // plays the audio track
 });

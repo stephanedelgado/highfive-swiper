@@ -59,21 +59,17 @@ body {
   animation: btnMusicAni 3s infinite linear;
 }
 
-.btn-music i {
-    width: 2em;
-    height: 2em;
-    text-align: center;
-    line-height: 2em;
-    color: #fff;
-    font-size: 2em;
-    position: absolute;
-    top: -2px;
-    left: -2px;
+.btn-music img {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  top: 7px;
+  left: 7px;
 }
 
 .btn-music.paused {
-    opacity: 0.4;
-    animation: none;
+  opacity: 0.4;
+  animation: none;
 }
 
 @keyframes btnMusicAni {
