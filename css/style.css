@@ -135,7 +135,7 @@ body {
 /*very annoying that i can't set a padding
 on the slide without breaking symetry*/
 .swiper-slide h2 {
-  padding: 0 10%;
+  padding: 0 9%;
   text-align: left;
 }
 
@@ -158,9 +158,8 @@ on the slide without breaking symetry*/
 }
 
 .slide-3 img {
-  width: 100px;
-  height: 100px;
-  margin: 20px 0 20px 0;
+  width: 70px;
+  height: 70px;
 }
 
 .slide-3 p {
@@ -172,15 +171,15 @@ on the slide without breaking symetry*/
 
 .container-infos {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 9%;
   margin: 0 auto;
   display: flex;
   align-items: center;
 }
 
 .address {
-  flex: 0 1 50%;
-  padding-right: 10px;
+  flex: 0 1 55%;
+  padding-right: 20px;
 }
 
 /***** DESKTOP VIEW *****/
