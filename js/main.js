@@ -83,8 +83,8 @@ $(document).ready(function () {
       }
   }
 
-  var SoundButton = document.getElementById("play");
-  $(SoundButton).on('click', playSound);
+  var soundButton = document.getElementById("play");
+  $(soundButton).on('click', playSound);
 
   $('.loading-overlay').slideUp();
   // everything is ready, the overlay slides up
