@@ -49,18 +49,18 @@ $(document).ready(function () {
 
   function playAnimations(mySwiper) {
 
-  clearAnimations();
-  // puts back original class
+    clearAnimations();
+    // puts back original class
 
-  var aniItems = mySwiper.slides[mySwiper.activeIndex].querySelectorAll('.animated');
-  // selecting items of current slide
+    var aniItems = mySwiper.slides[mySwiper.activeIndex].querySelectorAll('.animated');
+    // selecting items of current slide
 
-      $(aniItems).each(function () {
-          $(this).css({ 'visibility': 'visible' });
-          var aniName = $(this).data('ani-name');
-          $(this).addClass(aniName);
-          // ads class to launch animation
-      });
+        $(aniItems).each(function () {
+            $(this).css({ 'visibility': 'visible' });
+            var aniName = $(this).data('ani-name');
+            $(this).addClass(aniName);
+            // ads class to launch animation
+        });
   }
 
   var audio = document.getElementById("audio");
@@ -73,9 +73,7 @@ $(document).ready(function () {
       audio.pause();
   }
 
-  // play and pause button functions
-  var playSound = document.getElementById("play");
-  $(playSound).on('click', function(event) {
+  function playSound(event) {
     event.preventDefault();
     $(this).toggleClass('paused');
     if (audio.paused) {
@@ -83,9 +81,13 @@ $(document).ready(function () {
       } else {
         pauseAudio();
       }
-  });
+  }
 
-  playAudio();
+  // play and pause button functions
+  var playSound = document.getElementById("play");
+  $(playSound).on('click', playSound);
+
+  playSound();
   // starts playing the audio track
 
   $('.loading-overlay').slideUp();
