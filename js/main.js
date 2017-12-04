@@ -85,9 +85,10 @@ $(document).ready(function () {
       }
   });
 
+  playAudio();
+  // starts playing the audio track
+
   $('.loading-overlay').slideUp();
   // everything is ready, the overlay slides up
 
-  playAudio();
-  // starts playing the audio track
 });
