@@ -63,6 +63,7 @@ $(document).ready(function () {
         });
   }
 
+  // play and pause button functions
   var audio = document.getElementById("audio");
 
   function playAudio() {
@@ -73,8 +74,7 @@ $(document).ready(function () {
       audio.pause();
   }
 
-  function playSound(event) {
-    event.preventDefault();
+  function playSound() {
     $(this).toggleClass('paused');
     if (audio.paused) {
       playAudio();
@@ -83,14 +83,13 @@ $(document).ready(function () {
       }
   }
 
-  // play and pause button functions
-  var playSound = document.getElementById("play");
-  $(playSound).on('click', playSound);
-
-  playSound();
-  // starts playing the audio track
+  var SoundButton = document.getElementById("play");
+  $(SoundButton).on('click', playSound);
 
   $('.loading-overlay').slideUp();
   // everything is ready, the overlay slides up
+
+  playSound();
+  // starts playing the audio track
 
 });
