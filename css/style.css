@@ -11,14 +11,38 @@ body {
   height: 100%;
   position: relative;
   margin: 0 auto;
-  font-family: "Arial", sans-serif;
+  font-family: "Circular Std", sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 @media all and (min-width: 400px) { body { font-size: 21px; }}
 @media all and (min-width: 600px) { body { font-size: 32px; }}
 
+/***** FONTS *****/
+@font-face {
+  font-family: 'Circular Std';
+  src: url("../fonts/CircularStd-Black.eot");
+  src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff2") format("woff2"),
+       url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url("../fonts/CircularStd-Medium.eot");
+  src: url("../fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Medium.woff2") format("woff2"),
+       url("../fonts/CircularStd-Medium.woff") format("woff"), url("../fonts/CircularStd-Medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.text-black {
+  font-weight: 900;
+}
+
+/***** LOADING SCREEN *****/
 .loading-overlay {
   position: fixed;
   width: 100%;
@@ -118,7 +142,7 @@ button:focus { outline: none; }
 }
 
 .swiper-slide {
-  /*overwrite default 100% that messes with padding*/
+  /* overwrite vendor default 100% that messes with padding*/
   /* if not then each h2 and elements need have each a padding value*/
   width: unset!important;
   padding: 0 9%;
