@@ -1,2 +1,2 @@
 ## highfive-swiper
-A simple H5 for Wechat with Swiper and Animate.css
+Boilerplate for Wechat H5 using Swiper.js and Animate.css
